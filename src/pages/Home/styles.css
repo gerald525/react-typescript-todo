@@ -1,0 +1,15 @@
+.taskList {
+    list-style-type: none;
+}
+.title {
+    color: blueviolet;
+}
+.taskList {
+    display: grid;
+    padding: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+.as {
+    color: #9f51e7;
+}

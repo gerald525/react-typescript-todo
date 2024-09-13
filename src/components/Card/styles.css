@@ -1,0 +1,39 @@
+.cardContainer {
+    background-color: rgb(178, 178, 178);
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 6px;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+}
+.body {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(254, 254, 254);
+}
+.buttons {
+    border: none;
+    padding: 10px 12px;
+    background-color: #8a2be2;
+    color: white;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+}
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+#id {
+    color: white;
+    display: inline;
+}
