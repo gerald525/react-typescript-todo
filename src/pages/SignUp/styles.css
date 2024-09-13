@@ -18,3 +18,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.signupContainer {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
