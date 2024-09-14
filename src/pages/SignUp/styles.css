@@ -27,9 +27,9 @@
 .errorMessage {
     text-align: center;
     font-family: sans-serif;
-    color: rgb(244, 41, 41);
+    color: rgb(240, 92, 92);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .successfullMessage {

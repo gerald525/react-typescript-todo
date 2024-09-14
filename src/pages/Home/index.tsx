@@ -1,29 +1,11 @@
-import Card from '../../components/Card';
+import { useAuth } from '../../contexts/auth';
 import './styles.css';
 
 export default function Home() {
+    const auth = useAuth();
     return (
     <div>
-        <h2 className="title">Welcome, see all tasks</h2>
-        <div className="tasksContainer">
-            <ul className="taskList">
-                <li>
-                    <Card id="ajdsa-adja1j0-12ajaja" name="Ola Carlos" title="Card 0" description="Creakjdkfjad aksajdka jadjak jdaksjd jkaj kajdkj akdj akjdkajdkjak aj djaskdk ted asdaud ha hadha dhag djagsaydya gya 0" priority={4} finished={false}/>
-                </li>
-                <li>
-                    <Card id="ajdsa-adja1j0-12ajaja" name="Ola Carlos" title="Card 0" description="Created asdaud ha hadha dhag djagsaydya gya 0" priority={4} finished={false}/>
-                </li>
-                <li>
-                    <Card id="ajdsa-adja1j0-12ajaja" name="Ola Carlos" title="Card 0" description="Created asdaud ha hadha dhag djagsaydya gya 0" priority={4} finished={false}/>
-                </li>
-                <li>
-                    <Card id="ajdsa-adja1j0-12ajaja" name="Ola Carlos" title="Card 0" description="Created asdaud ha hadha dhag djagsaydya gya 0" priority={4} finished={false}/>
-                </li>
-                <li>
-                    <Card id="ajdsa-adja1j0-12ajaja" name="Ola Carlos" title="Card 0" description="Created asdaud ha hadha dhag djagsaydya gya 0" priority={4} finished={false}/>
-                </li>
-            </ul>
-        </div>
+        <h2 className="title">Welcome, see all tasks {auth.token}</h2>
     </div>
     );
 }

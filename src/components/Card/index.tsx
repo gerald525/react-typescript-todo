@@ -7,9 +7,5 @@ export default function Card({id, name, description, priority, finished}: any) {
         <div className="body">
             <p className="text">{description}</p>
         </div>
-        <div className="buttonsContainer">
-            <button className="buttons">Excluir</button>
-            <button className="buttons">Editar</button>
-        </div>
     </div>)
 }
