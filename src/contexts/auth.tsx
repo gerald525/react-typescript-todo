@@ -17,20 +17,18 @@ export function useAuth() {
 }
 
 export const AuthProvider = ({children}: any) => {
-    const [token, setToken] = useState<string | null>(null);
+    const [token, setToken] = useState<string | null>(localStorage.getItem('@App:token'));
 
     useEffect(() => {
         const storagedRefreshToken = localStorage.getItem('@App:refreshToken');
         const storagedToken = localStorage.getItem('@App:token');
-        if (storagedToken && storagedRefreshToken) {
-            setToken(storagedToken);
-            api.setHeaders(token as string);
-        }
+        if (storagedToken && storagedRefreshToken)
+            api.setHeaders(storagedToken as string);
     }, []);
 
     function Logout() {
         sessionStorage.removeItem('@App:refreshToken');
-        sessionStorage.removeItem('App:token');
+        sessionStorage.removeItem('@App:token');
         setToken(null);
     }
 
