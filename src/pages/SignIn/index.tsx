@@ -19,7 +19,7 @@ export default function SignIn() {
     return (<div className="container">
         <div className="wrapper">
             <h2 className="title">Logar no To-Do List App</h2>
-            <Forms fields={fields} submitBtn="Logar"></Forms>
+            <Forms fields={fields} sendInformation={(params: any) => console.log(params)} submitBtn="Logar"></Forms>
             <div className="signupContainer">
                 <p>Ou, caso não possua conta <Link to="/signup">cadastre-se</Link></p>
             </div>

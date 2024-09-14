@@ -24,3 +24,18 @@
     font-family: sans-serif;
     font-size: 16px;
 }
+.errorMessage {
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(244, 41, 41);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.successfullMessage {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(62, 205, 62);
+}
