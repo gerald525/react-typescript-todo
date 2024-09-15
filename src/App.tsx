@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import {useAuth} from './contexts/auth';
+import { NewTask } from './pages/NewTask';
 
 function App() {
   const auth = useAuth();
@@ -12,6 +13,7 @@ function App() {
       <Route path='/' element={auth.signed ? <Home/> : <Navigate to='/signin' replace={true} />}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signin' element={!auth.signed ? <SignIn/> : <Navigate to='/'/>}/>
+      <Route path='/new-task' element={auth.signed ? <NewTask/> : <Navigate to='/'/>}/>
     </Routes>
   );
 }

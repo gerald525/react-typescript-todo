@@ -1,15 +1,63 @@
 .taskList {
     list-style-type: none;
 }
-.title {
+.titleHome {
+    font-size: 32px;
     color: blueviolet;
+    font-family: sans-serif;
 }
-.taskList {
-    display: grid;
-    padding: 50px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 30px;
+.listTask {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 25px;
+    gap: 10px;
 }
-.as {
-    color: #9f51e7;
+
+.cardWrapper {
+    width: 300px;
+    height: 250px;
+}
+
+.logoutBtn {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: blueviolet;
+}
+
+.headContainer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.deleteAccountBtn {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(249, 72, 72);
+}
+
+.newTaskBtn {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(4, 193, 4);
 }

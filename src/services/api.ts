@@ -20,8 +20,8 @@ export default class HttpRequest {
         return response;
     }
 
-    async deleteRequest(path: string) {
-        const response = await api.delete(path);
+    async deleteRequest(path: string, data: any) {
+        const response = await api.delete(path, {data});
         return response;
     }
 

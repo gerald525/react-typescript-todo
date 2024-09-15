@@ -20,6 +20,7 @@ export default function SignIn() {
             setErrorMessage("Email/Senhas estão inválidos");
         }
     }
+    
     const fields = [{
         id: "email",
         label: "Email",
@@ -33,6 +34,7 @@ export default function SignIn() {
         type: "password",
         className: "inputField",
     }];
+    
     return (<div className="container">
         <div className="wrapper">
             <h2 className="title">Logar no To-Do List App</h2>

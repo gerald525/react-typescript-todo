@@ -9,7 +9,9 @@ export default function Forms({fields, submitBtn, sendInformation}: any) {
         const email = form.get('email');
         const password = form.get('password');
         const confirmPassword = form.get('repeatPassword');
-        sendInformation({name, email, password, confirmPassword});
+        const description = form.get('description');
+        const priority = form.get('priority');
+        sendInformation({name, email, password, confirmPassword, description, priority});
     }
     return (
     <form onSubmit={handleSubmit} className="formContainer">
