@@ -3,7 +3,8 @@ import { useAuth } from '../../contexts/auth';
 import './styles.css';
 import { useNavigate } from 'react-router-dom';
 
-export default function Card({id, memberId, name, description, priority, finished, deleteTask}: any) {
+export default function Card({id, memberId, name, description, priority, finished, finishedAt, deleteTask}: any) {
+    const [date] = useState(new Date(finishedAt).toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
     const navigate = useNavigate();
     const handleDelete = () => {
         deleteTask(id);
@@ -21,6 +22,7 @@ export default function Card({id, memberId, name, description, priority, finishe
             <div className="body">
                 <p className="textDescription">{description}</p>
                 <p className={`textPriority ${(priority === 0 ? "low" : (priority === 1 ? "medium" : "high"))}`}>Prioridade: {priority === 0 ? "Baixa" : (priority === 1 ? "Média" : "Alta")}</p>
+                {finished && <div className="finishedAtText">Finalizada em: {date}</div>}
             </div>
         </div>
         {userId === memberId && <div>

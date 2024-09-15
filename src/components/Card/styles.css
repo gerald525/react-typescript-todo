@@ -1,14 +1,20 @@
 .cardContainer {
-    background-color: rgba(245, 234, 255, 0.891);
+    background-color: rgba(168, 168, 168, 0.891);
     border: 1px solid #000;
     padding: 20px 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    max-width: 300px;
-    height: 100%;
+    max-width: 350px;
+    height: 400px;
     border-radius: 6px;
+}
+
+.finishedAtText {
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    color: #212121;
 }
 
 .titleCard {

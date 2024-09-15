@@ -6,7 +6,7 @@ import HttpRequest from "../../services/api";
 
 export default function SignUp() {
     const navigate = useNavigate()
-    const [successfullMessage, setSuccessfullMessage] = useState("");
+    const [successfullMessage, setSuccessfullMessage] = useState<string | null>(null);
     const [error, setError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const httpRequest = new HttpRequest();
@@ -25,7 +25,7 @@ export default function SignUp() {
                 setSuccessfullMessage("Usuário criado com sucesso!");
                 setTimeout(() => {
                     navigate('/signin');
-                }, 2000)
+                }, 3000)
             }catch(err: any){
                 const statusCode = err.status;
                 if(statusCode === 409){
@@ -65,7 +65,10 @@ export default function SignUp() {
     return (
     <div className="container">
         <div className="wrapper">
-            <p className="successfullMessage">{successfullMessage}</p>
+            {successfullMessage && <div className="notificationMessage">
+                <p className="successfullMessage">{successfullMessage}</p>
+                <div className="timeBar"></div>
+            </div>}
             <h2 className="title">Cadastrar no To-Do List App</h2>
             <Forms fields={fields} sendInformation={handleSubmit} submitBtn="Cadastrar"></Forms>
             {error && <p className="errorMessage">{errorMessage}</p>}

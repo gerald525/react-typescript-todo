@@ -72,7 +72,7 @@ export default function Home() {
         <div>
             <ul className="listTask">
                 {tasks.map((task: any, idx) => {
-                    return <li className="cardWrapper" key={idx}><Card deleteTask={handleDeleteTask} memberId={task.memberId} id={task.id} name={task.name} description={task.description} priority={task.priority}></Card></li>
+                    return <li className="cardWrapper" key={idx}><Card finishedAt={task.finishedAt} finished={task.finished} deleteTask={handleDeleteTask} memberId={task.memberId} id={task.id} name={task.name} description={task.description} priority={task.priority}></Card></li>
                 })}
             </ul>
         </div>
