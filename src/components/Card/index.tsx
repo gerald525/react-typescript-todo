@@ -1,10 +1,15 @@
 import { useState } from 'react';
 import { useAuth } from '../../contexts/auth';
 import './styles.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Card({id, memberId, name, description, priority, finished, deleteTask}: any) {
+    const navigate = useNavigate();
     const handleDelete = () => {
         deleteTask(id);
+    }
+    const handleEdit = () => {
+        navigate(`/task/edit/${id}`);
     }
     const auth = useAuth();
     const [userId] = useState(auth.member.id);
@@ -20,7 +25,7 @@ export default function Card({id, memberId, name, description, priority, finishe
         </div>
         {userId === memberId && <div>
             <button className="deleteBtn" onClick={handleDelete}>Excluir</button>
-            <button className="editBtn">Editar</button>
+            <button className="editBtn" onClick={handleEdit}>Editar</button>
         </div>}
     </div>)
 }

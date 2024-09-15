@@ -1,0 +1,64 @@
+.editTaskListItems {
+    list-style-type: none;
+}
+
+.listItem {
+    padding: 20px 25px;
+}
+
+.titleEditTask {
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(127, 30, 217);
+}
+
+.formEditTask {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editTask {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.editTaskContainer {
+    border: 1px solid #424242;
+    padding: 20px 25px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
+    font-family: sans-serif;
+    align-items: flex-start;
+}
+
+.inputEditTask {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #424242;
+    width: 300px;
+}
+
+.listItemLast {
+    color: blueviolet;
+    font-family: sans-serif;
+    align-items: flex-start;
+    padding: 0px 25px;
+}
+
+.editTaskBtn {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    padding: 12px 20px;
+    color: white;
+    font-size: 14px;
+}
