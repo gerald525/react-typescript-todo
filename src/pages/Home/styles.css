@@ -1,63 +1,63 @@
 .taskList {
-    list-style-type: none;
+	list-style-type: none;
 }
 .titleHome {
-    font-size: 32px;
-    color: blueviolet;
-    font-family: sans-serif;
+	font-size: 32px;
+	color: blueviolet;
+	font-family: sans-serif;
 }
 .listTask {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 25px;
-    gap: 10px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px 25px;
+	gap: 10px;
 }
 
 .cardWrapper {
-    width: 300px;
-    height: 250px;
+	width: 300px;
+	height: 250px;
 }
 
 .logoutBtn {
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: blueviolet;
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: blueviolet;
 }
 
 .headContainer {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .buttonsContainer {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .deleteAccountBtn {
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: rgb(249, 72, 72);
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: rgb(249, 72, 72);
 }
 
 .newTaskBtn {
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: rgb(4, 193, 4);
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: rgb(4, 193, 4);
 }

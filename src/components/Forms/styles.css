@@ -1,56 +1,56 @@
 .formFieldsList {
-    list-style-type: none;
-    padding: 20px 30px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	list-style-type: none;
+	padding: 20px 30px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .formContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: blueviolet;
-    font-family: sans-serif;
-    font-weight: 500;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: blueviolet;
+	font-family: sans-serif;
+	font-weight: 500;
+	align-items: center;
 }
 .errorFlag {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    color: rgb(222, 21, 21);
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	color: rgb(222, 21, 21);
 }
 
 .field {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 15px;
-    font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 15px;
+	font-size: 16px;
 }
 .inputField {
-    outline: none;
-    border: 1px solid #cdcdcd;
-    border-radius: 5px;
-    padding: 10px 15px;
-    min-width: 250px;
-    width: 30vw;
-    color: #303030;
+	outline: none;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+	padding: 10px 15px;
+	min-width: 250px;
+	width: 30vw;
+	color: #303030;
 }
 .submitBtn {
-    width: 200px;
-    padding: 10px 15px;
-    border: none;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.4s ease-in-out;
+	width: 200px;
+	padding: 10px 15px;
+	border: none;
+	background-color: blueviolet;
+	color: white;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	transition: background-color 0.4s ease-in-out;
 }
 .submitBtn:hover {
-    background-color: rgb(106, 36, 171);
-    transition: background-color 0.4s ease-in-out;
+	background-color: rgb(106, 36, 171);
+	transition: background-color 0.4s ease-in-out;
 }
